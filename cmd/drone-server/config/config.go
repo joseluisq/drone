@@ -15,7 +15,6 @@
 package config
 
 import (
-	"errors"
 	"fmt"
 	"os"
 	"strings"
@@ -68,7 +67,6 @@ type (
 		Repository   Repository
 		Runner       Runner
 		Nomad        Nomad
-		Kube         Kubernetes
 		RPC          RPC
 		S3           S3
 		Secrets      Secrets
@@ -141,18 +139,6 @@ type (
 	// Starlark configures the starlark plugin
 	Starlark struct {
 		Enabled bool `envconfig:"DRONE_STARLARK_ENABLED"`
-	}
-
-	// Kubernetes provides kubernetes configuration
-	Kubernetes struct {
-		Enabled            bool   `envconfig:"DRONE_KUBERNETES_ENABLED"`
-		Namespace          string `envconfig:"DRONE_KUBERNETES_NAMESPACE"`
-		Path               string `envconfig:"DRONE_KUBERNETES_CONFIG_PATH"`
-		URL                string `envconfig:"DRONE_KUBERNETES_CONFIG_URL"`
-		TTL                int    `envconfig:"DRONE_KUBERNETES_TTL_AFTER_FINISHED" default:"300"`
-		ServiceAccountName string `envconfig:"DRONE_KUBERNETES_SERVICE_ACCOUNT"`
-		PullPolicy         string `envconfig:"DRONE_KUBERNETES_IMAGE_PULL" default:"Always"`
-		Image              string `envconfig:"DRONE_KUBERNETES_IMAGE"`
 	}
 
 	// Nomad configuration.
@@ -446,9 +432,6 @@ func Environ() (Config, error) {
 	defaultSession(&cfg)
 	defaultCallback(&cfg)
 	configureGithub(&cfg)
-	if err := kubernetesServiceConflict(&cfg); err != nil {
-		return cfg, err
-	}
 	return cfg, err
 }
 
@@ -555,13 +538,6 @@ func configureGithub(c *Config) {
 	} else {
 		c.Github.APIServer = strings.TrimSuffix(c.Github.Server, "/") + "/api/v3"
 	}
-}
-
-func kubernetesServiceConflict(c *Config) error {
-	if strings.HasPrefix(c.Server.Port, "tcp://") {
-		return errors.New("Invalid port configuration. See https://discourse.drone.io/t/drone-server-changing-ports-protocol/4144")
-	}
-	return nil
 }
 
 // Bytes stores number bytes (e.g. megabytes)

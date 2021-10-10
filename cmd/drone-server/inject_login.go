@@ -15,16 +15,17 @@
 package main
 
 import (
-	"github.com/joseluisq/drone/cmd/drone-server/config"
-	"github.com/drone/go-login/login"
-	"github.com/drone/go-login/login/bitbucket"
-	"github.com/drone/go-login/login/gitea"
-	"github.com/drone/go-login/login/github"
-	"github.com/drone/go-login/login/gitlab"
-	"github.com/drone/go-login/login/gogs"
-	"github.com/drone/go-login/login/stash"
-	"github.com/drone/go-scm/scm/transport/oauth2"
 	"strings"
+
+	"github.com/drone/go-scm/scm/transport/oauth2"
+	"github.com/joseluisq/drone-go-login/login"
+	"github.com/joseluisq/drone-go-login/login/bitbucket"
+	"github.com/joseluisq/drone-go-login/login/gitea"
+	"github.com/joseluisq/drone-go-login/login/github"
+	"github.com/joseluisq/drone-go-login/login/gitlab"
+	"github.com/joseluisq/drone-go-login/login/gogs"
+	"github.com/joseluisq/drone-go-login/login/stash"
+	"github.com/joseluisq/drone/cmd/drone-server/config"
 
 	"github.com/google/wire"
 	"github.com/sirupsen/logrus"
@@ -93,7 +94,7 @@ func provideGiteaLogin(config config.Config) login.Middleware {
 	if config.Gitea.Server == "" {
 		return nil
 	}
-	return &gitea.Config {
+	return &gitea.Config{
 		ClientID:     config.Gitea.ClientID,
 		ClientSecret: config.Gitea.ClientSecret,
 		Server:       config.Gitea.Server,

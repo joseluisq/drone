@@ -2,6 +2,7 @@
 // Use of this source code is governed by the Drone Non-Commercial License
 // that can be found in the LICENSE file.
 
+//go:build !oss
 // +build !oss
 
 package main
@@ -13,13 +14,12 @@ import (
 
 	"github.com/drone/drone-runtime/engine"
 	"github.com/drone/drone-runtime/engine/docker"
-	"github.com/drone/drone-runtime/engine/kube"
+	"github.com/drone/signal"
 	"github.com/joseluisq/drone/cmd/drone-controller/config"
 	"github.com/joseluisq/drone/operator/manager/rpc"
 	"github.com/joseluisq/drone/operator/runner"
 	"github.com/joseluisq/drone/plugin/registry"
 	"github.com/joseluisq/drone/plugin/secret"
-	"github.com/drone/signal"
 
 	"github.com/sirupsen/logrus"
 
@@ -72,18 +72,10 @@ func main() {
 
 	var engine engine.Engine
 
-	if isKubernetes() {
-		engine, err = kube.NewFile("", "", config.Runner.Machine)
-		if err != nil {
-			logrus.WithError(err).
-				Fatalln("cannot create the kubernetes client")
-		}
-	} else {
-		engine, err = docker.NewEnv()
-		if err != nil {
-			logrus.WithError(err).
-				Fatalln("cannot load the docker engine")
-		}
+	engine, err = docker.NewEnv()
+	if err != nil {
+		logrus.WithError(err).
+			Fatalln("cannot load the docker engine")
 	}
 
 	r := &runner.Runner{
@@ -122,10 +114,6 @@ func main() {
 		logrus.WithError(err).
 			Warnln("program terminated")
 	}
-}
-
-func isKubernetes() bool {
-	return os.Getenv("KUBERNETES_SERVICE_HOST") != ""
 }
 
 // helper function configures the logging.

@@ -22,9 +22,9 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/joseluisq/drone-go-login/login"
 	"github.com/joseluisq/drone/core"
 	"github.com/joseluisq/drone/logger"
-	"github.com/drone/go-login/login"
 
 	"github.com/dchest/uniuri"
 	"github.com/sirupsen/logrus"

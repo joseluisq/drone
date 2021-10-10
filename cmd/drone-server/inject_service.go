@@ -17,6 +17,7 @@ package main
 import (
 	"time"
 
+	"github.com/drone/go-scm/scm"
 	"github.com/joseluisq/drone/cmd/drone-server/config"
 	"github.com/joseluisq/drone/core"
 	"github.com/joseluisq/drone/livelog"
@@ -42,7 +43,6 @@ import (
 	"github.com/joseluisq/drone/trigger"
 	"github.com/joseluisq/drone/trigger/cron"
 	"github.com/joseluisq/drone/version"
-	"github.com/drone/go-scm/scm"
 
 	"github.com/google/wire"
 )
@@ -209,21 +209,20 @@ func provideDatadog(
 		builds,
 		*system,
 		sink.Config{
-			Endpoint:         config.Datadog.Endpoint,
-			Token:            config.Datadog.Token,
-			License:          license.Kind,
-			Licensor:         license.Licensor,
-			Subscription:     license.Subscription,
-			EnableGithub:     config.IsGitHub(),
-			EnableGithubEnt:  config.IsGitHubEnterprise(),
-			EnableGitlab:     config.IsGitLab(),
-			EnableBitbucket:  config.IsBitbucket(),
-			EnableStash:      config.IsStash(),
-			EnableGogs:       config.IsGogs(),
-			EnableGitea:      config.IsGitea(),
-			EnableAgents:     !config.Agent.Disabled,
-			EnableNomad:      config.Nomad.Enabled,
-			EnableKubernetes: config.Kube.Enabled,
+			Endpoint:        config.Datadog.Endpoint,
+			Token:           config.Datadog.Token,
+			License:         license.Kind,
+			Licensor:        license.Licensor,
+			Subscription:    license.Subscription,
+			EnableGithub:    config.IsGitHub(),
+			EnableGithubEnt: config.IsGitHubEnterprise(),
+			EnableGitlab:    config.IsGitLab(),
+			EnableBitbucket: config.IsBitbucket(),
+			EnableStash:     config.IsStash(),
+			EnableGogs:      config.IsGogs(),
+			EnableGitea:     config.IsGitea(),
+			EnableAgents:    !config.Agent.Disabled,
+			EnableNomad:     config.Nomad.Enabled,
 		},
 	)
 }

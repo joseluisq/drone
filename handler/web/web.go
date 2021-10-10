@@ -18,12 +18,12 @@ import (
 	"net/http"
 
 	"github.com/drone/drone-ui/dist"
+	"github.com/drone/go-scm/scm"
+	"github.com/joseluisq/drone-go-login/login"
 	"github.com/joseluisq/drone/core"
 	"github.com/joseluisq/drone/handler/web/landingpage"
 	"github.com/joseluisq/drone/handler/web/link"
 	"github.com/joseluisq/drone/logger"
-	"github.com/drone/go-login/login"
-	"github.com/drone/go-scm/scm"
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"

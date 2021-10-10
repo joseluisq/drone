@@ -17,7 +17,6 @@ package main
 import (
 	"github.com/joseluisq/drone/cmd/drone-server/config"
 	"github.com/joseluisq/drone/core"
-	"github.com/joseluisq/drone/scheduler/kube"
 	"github.com/joseluisq/drone/scheduler/nomad"
 	"github.com/joseluisq/drone/scheduler/queue"
 
@@ -34,51 +33,11 @@ var schedulerSet = wire.NewSet(
 // scheduler based on the environment configuration.
 func provideScheduler(store core.StageStore, config config.Config) core.Scheduler {
 	switch {
-	case config.Kube.Enabled:
-		return provideKubernetesScheduler(config)
 	case config.Nomad.Enabled:
 		return provideNomadScheduler(config)
 	default:
 		return provideQueueScheduler(store, config)
 	}
-}
-
-// provideKubernetesScheduler is a Wire provider function that
-// returns a nomad kubernetes from the environment configuration.
-func provideKubernetesScheduler(config config.Config) core.Scheduler {
-	logrus.Info("main: kubernetes scheduler enabled")
-	sched, err := kube.FromConfig(kube.Config{
-		Namespace:       config.Kube.Namespace,
-		ServiceAccount:  config.Kube.ServiceAccountName,
-		ConfigURL:       config.Kube.URL,
-		ConfigPath:      config.Kube.Path,
-		TTL:             config.Kube.TTL,
-		Image:           config.Kube.Image,
-		ImagePullPolicy: config.Kube.PullPolicy,
-		ImagePrivileged: config.Runner.Privileged,
-		// LimitMemory:      config.Nomad.Memory,
-		// LimitCompute:     config.Nomad.CPU,
-		// RequestMemory:    config.Nomad.Memory,
-		// RequestCompute:   config.Nomad.CPU,
-		CallbackHost:     config.RPC.Host,
-		CallbackProto:    config.RPC.Proto,
-		CallbackSecret:   config.RPC.Secret,
-		SecretToken:      config.Secrets.Password,
-		SecretEndpoint:   config.Secrets.Endpoint,
-		SecretInsecure:   config.Secrets.SkipVerify,
-		RegistryToken:    config.Registries.Password,
-		RegistryEndpoint: config.Registries.Endpoint,
-		RegistryInsecure: config.Registries.SkipVerify,
-		LogDebug:         config.Logging.Debug,
-		LogTrace:         config.Logging.Trace,
-		LogPretty:        config.Logging.Pretty,
-		LogText:          config.Logging.Text,
-	})
-	if err != nil {
-		logrus.WithError(err).
-			Fatalln("main: cannot create kubernetes client")
-	}
-	return sched
 }
 
 // provideNomadScheduler is a Wire provider function that returns
