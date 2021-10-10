@@ -18,7 +18,7 @@ import (
 	"context"
 	"io"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 )
 
 // NewCombined returns a new combined log store that will fallback

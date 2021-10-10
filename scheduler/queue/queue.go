@@ -21,7 +21,7 @@ import (
 
 	"github.com/drone/drone-go/drone"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 )
 
 type queue struct {

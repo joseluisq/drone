@@ -11,7 +11,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 
 	"github.com/99designs/httpsignatures-go"
 	"github.com/h2non/gock"

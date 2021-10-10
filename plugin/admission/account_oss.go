@@ -16,7 +16,7 @@
 
 package admission
 
-import "github.com/drone/drone/core"
+import "github.com/joseluisq/drone/core"
 
 // Membership is a no-op admission controller
 func Membership(core.OrganizationService, []string) core.AdmissionService {

@@ -20,7 +20,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 )
 
 // Global returns a no-op configuration service.

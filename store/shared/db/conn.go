@@ -13,9 +13,9 @@ import (
 
 	"github.com/jmoiron/sqlx"
 
-	"github.com/drone/drone/store/shared/migrate/mysql"
-	"github.com/drone/drone/store/shared/migrate/postgres"
-	"github.com/drone/drone/store/shared/migrate/sqlite"
+	"github.com/joseluisq/drone/store/shared/migrate/mysql"
+	"github.com/joseluisq/drone/store/shared/migrate/postgres"
+	"github.com/joseluisq/drone/store/shared/migrate/sqlite"
 )
 
 // Connect to a database and verify with a ping.

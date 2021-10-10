@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 
 	"github.com/hashicorp/go-multierror"
 	"github.com/robfig/cron"

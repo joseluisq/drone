@@ -14,7 +14,7 @@
 
 package runner
 
-import "github.com/drone/drone/core"
+import "github.com/joseluisq/drone/core"
 
 func toSecretMap(secrets []*core.Secret) map[string]string {
 	set := map[string]string{}

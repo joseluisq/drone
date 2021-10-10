@@ -18,7 +18,7 @@ import (
 	"strings"
 
 	"github.com/drone/drone-yaml/yaml"
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 )
 
 func skipBranch(document *yaml.Pipeline, branch string) bool {

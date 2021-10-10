@@ -22,7 +22,7 @@ import (
 
 	"github.com/jmoiron/sqlx"
 
-	"github.com/drone/drone/store/shared/migrate/sqlite"
+	"github.com/joseluisq/drone/store/shared/migrate/sqlite"
 )
 
 // Connect to an embedded sqlite database.

@@ -16,7 +16,7 @@
 
 package metric
 
-import "github.com/drone/drone/core"
+import "github.com/joseluisq/drone/core"
 
 func BuildCount(core.BuildStore)        {}
 func PendingBuildCount(core.BuildStore) {}

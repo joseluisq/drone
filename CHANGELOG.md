@@ -23,7 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.9.1]
 ### Added
-- support for increasing the http request timeout for extensions. [#2998](https://github.com/drone/drone/pull/2998).
+- support for increasing the http request timeout for extensions. [#2998](https://github.com/joseluisq/drone/pull/2998).
 - support for skipping a pipeline if the validation extension returns an ErrSkip.
 - support for blocking a pipeline if the validation extension returns an ErrBlock.
 
@@ -68,20 +68,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.7.0] - 2020-03-27
 ### Added
-- endpoint to display the latest build by branch. [#2940](https://github.com/drone/drone/pull/2940).
-- endpoint to display the latest build by pull request. [#2940](https://github.com/drone/drone/pull/2940).
-- endpoint to display the latest build by environment. [#2940](https://github.com/drone/drone/pull/2940).
-- endpoint to delete a branch from the index. [#2940](https://github.com/drone/drone/pull/2940).
-- endpoint to delete a pull request from the index. [#2940](https://github.com/drone/drone/pull/2940).
-- endpoint to delete an environment from the index. [#2940](https://github.com/drone/drone/pull/2940).
+- endpoint to display the latest build by branch. [#2940](https://github.com/joseluisq/drone/pull/2940).
+- endpoint to display the latest build by pull request. [#2940](https://github.com/joseluisq/drone/pull/2940).
+- endpoint to display the latest build by environment. [#2940](https://github.com/joseluisq/drone/pull/2940).
+- endpoint to delete a branch from the index. [#2940](https://github.com/joseluisq/drone/pull/2940).
+- endpoint to delete a pull request from the index. [#2940](https://github.com/joseluisq/drone/pull/2940).
+- endpoint to delete an environment from the index. [#2940](https://github.com/joseluisq/drone/pull/2940).
 - page to view the latest build per branch.
 
 ### Fixed
 - sync routine not executing asyncronously, being cancelled by http context.
 - sync routine should ignore gitlab subrepositories
 - convert deploy events in 0.8 yaml to promote events.
-- do not execute cron job for disabled repositories. [#2931](https://github.com/drone/drone/issues/2931).
-- remove trailing slash from gitea url to prevent oauth2 token refresh errors, by [@cmj0121](https://github.com/cmj0121). [#2920](https://github.com/drone/drone/issues/2920). 
+- do not execute cron job for disabled repositories. [#2931](https://github.com/joseluisq/drone/issues/2931).
+- remove trailing slash from gitea url to prevent oauth2 token refresh errors, by [@cmj0121](https://github.com/cmj0121). [#2920](https://github.com/joseluisq/drone/issues/2920). 
 - disable font ligatures in build log output. [drone/drone-ui#322](https://github.com/drone/drone-ui/pull/322).
 - missing am/pm in timstamps
 
@@ -120,27 +120,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.6.0] - 2019-10-04
 ### Added
 - added nsswitch to docker images
-- option to auto-cancel pending builds when newer build enqueued, by [@bradrydzewski](https://github.com/bradrydzewski). [#1980](https://github.com/drone/drone/issues/1980).
-- endpoint to list all repositories in the database, by [@bradrydzewski](https://github.com/bradrydzewski). [#2785](https://github.com/drone/drone/issues/2785).
+- option to auto-cancel pending builds when newer build enqueued, by [@bradrydzewski](https://github.com/bradrydzewski). [#1980](https://github.com/joseluisq/drone/issues/1980).
+- endpoint to list all repositories in the database, by [@bradrydzewski](https://github.com/bradrydzewski). [#2785](https://github.com/joseluisq/drone/issues/2785).
 
 ### Fixed
-- improve sync to handle duplicate repository names with different unique identifiers, by [@bradrydzewski](https://github.com/bradrydzewski). [#2658](https://github.com/drone/drone/issues/2658). _You can revert to the previous sync logic with DRONE_DATABASE_LEGACY_BATCH=true_.
+- improve sync to handle duplicate repository names with different unique identifiers, by [@bradrydzewski](https://github.com/bradrydzewski). [#2658](https://github.com/joseluisq/drone/issues/2658). _You can revert to the previous sync logic with DRONE_DATABASE_LEGACY_BATCH=true_.
 
 ## [1.5.1] - 2019-09-30
 ### Added
-- allow organization admins access to organization secret endpoints, by [@bradrydzewski](https://github.com/bradrydzewski). [#2838](https://github.com/drone/drone/issues/2838).
+- allow organization admins access to organization secret endpoints, by [@bradrydzewski](https://github.com/bradrydzewski). [#2838](https://github.com/joseluisq/drone/issues/2838).
 
 ### Fixed
 - fix invalid deep links in UI for github enterprise, by [@bradrydzewski](https://github.com/bradrydzewski).
-- ensure correct casing when manually adding user, by [@bradrydzewski](https://github.com/bradrydzewski). [#2766](https://github.com/drone/drone/issues/2766).
+- ensure correct casing when manually adding user, by [@bradrydzewski](https://github.com/bradrydzewski). [#2766](https://github.com/joseluisq/drone/issues/2766).
 
 ## [1.5.0] - 2019-09-28
 ### Added
-- endpoint to execute a cron pipeline on-demand, by [@bradrydzewski](https://github.com/bradrydzewski). [#2781](https://github.com/drone/drone/issues/2781).
-- endpoint to list builds by branch, by [@bradrydzewski](https://github.com/bradrydzewski). [#1495](https://github.com/drone/drone/issues/1495).
-- ignore skip comments when cron event, by [@bradrydzewski](https://github.com/bradrydzewski). [#2835](https://github.com/drone/drone/issues/2835).
-- support for admission extensions, by [@bradrydzewski](https://github.com/bradrydzewski). [#2043](https://github.com/drone/drone/issues/2043).
-- endpoint to provide link to git resources, by [@bradrydzewski](https://github.com/bradrydzewski). [#2843](https://github.com/drone/drone/issues/2843).
+- endpoint to execute a cron pipeline on-demand, by [@bradrydzewski](https://github.com/bradrydzewski). [#2781](https://github.com/joseluisq/drone/issues/2781).
+- endpoint to list builds by branch, by [@bradrydzewski](https://github.com/bradrydzewski). [#1495](https://github.com/joseluisq/drone/issues/1495).
+- ignore skip comments when cron event, by [@bradrydzewski](https://github.com/bradrydzewski). [#2835](https://github.com/joseluisq/drone/issues/2835).
+- support for admission extensions, by [@bradrydzewski](https://github.com/bradrydzewski). [#2043](https://github.com/joseluisq/drone/issues/2043).
+- endpoint to provide link to git resources, by [@bradrydzewski](https://github.com/bradrydzewski). [#2843](https://github.com/joseluisq/drone/issues/2843).
 - improve bitbucket status display text on new pull request screen, by [@bradrydzewski](https://github.com/bradrydzewski).
 
 ### Fixed
@@ -153,20 +153,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.4.0] - 2019-09-12
 ### Added
-- upgrade to Go 1.13 to resolve arm segfault, by [@KN4CK3R](https://github.com/KN4CK3R). [#2823](https://github.com/drone/drone/issues/2823).
-- configure default visibility, by [@JordanSussman](https://github.com/JordanSussman). [#2824](https://github.com/drone/drone/issues/2824).
+- upgrade to Go 1.13 to resolve arm segfault, by [@KN4CK3R](https://github.com/KN4CK3R). [#2823](https://github.com/joseluisq/drone/issues/2823).
+- configure default visibility, by [@JordanSussman](https://github.com/JordanSussman). [#2824](https://github.com/joseluisq/drone/issues/2824).
 - configure default trusted flag, by [@vyckou](https://github.com/vyckou).
-- support for validation plugins, by [@bradrydzewski](https://github.com/bradrydzewski). [#2266](https://github.com/drone/drone/issues/2266).
+- support for validation plugins, by [@bradrydzewski](https://github.com/bradrydzewski). [#2266](https://github.com/joseluisq/drone/issues/2266).
 - support for conversion plugins, by [@bradrydzewski](https://github.com/bradrydzewski).
-- support for cron event type, by [@bradrydzewski](https://github.com/bradrydzewski). [#2705](https://github.com/drone/drone/issues/2705).
-- support for rollback event, by [@bradrydzewski](https://github.com/bradrydzewski). [#2695](https://github.com/drone/drone/issues/2695).
-- support for lets encrypt email, by [@bradrydzewski](https://github.com/bradrydzewski). [#2505](https://github.com/drone/drone/issues/2505).
+- support for cron event type, by [@bradrydzewski](https://github.com/bradrydzewski). [#2705](https://github.com/joseluisq/drone/issues/2705).
+- support for rollback event, by [@bradrydzewski](https://github.com/bradrydzewski). [#2695](https://github.com/joseluisq/drone/issues/2695).
+- support for lets encrypt email, by [@bradrydzewski](https://github.com/bradrydzewski). [#2505](https://github.com/joseluisq/drone/issues/2505).
 
 ### Removed
-- Support for basic auth as an option for Gitea, by [@techknowlogick](https://giteahub.com/techknowlogick). [#2721](https://github.com/drone/drone/issues/2721)
+- Support for basic auth as an option for Gitea, by [@techknowlogick](https://giteahub.com/techknowlogick). [#2721](https://github.com/joseluisq/drone/issues/2721)
 
 ### Fixed
-- copy cron job name when restarting a cron job, by [@bradrydzewski](https://github.com/bradrydzewski). [#2760](https://github.com/drone/drone/issues/2760).
+- copy cron job name when restarting a cron job, by [@bradrydzewski](https://github.com/bradrydzewski). [#2760](https://github.com/joseluisq/drone/issues/2760).
 
 ## [1.3.1] - 2019-08-26
 ### Added
@@ -174,13 +174,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.3.0] - 2019-08-20
 ### Added
-- support for storing logs in Azure Cloud Storage, by [@Lucretius](https://github.com/Lucretius). [#2788](https://github.com/drone/drone/pull/2788)
+- support for storing logs in Azure Cloud Storage, by [@Lucretius](https://github.com/Lucretius). [#2788](https://github.com/joseluisq/drone/pull/2788)
 - support for windows server 1903, by [@bradrydzewski](https://github.com/bradrydzewski).
 - button to view the full log file, by [@dramich](https://github.com/dramich). [drone/drone-ui#287](https://github.com/drone/drone-ui/pull/287).
 
 ### Fixed
 - read gogs sha from webhook, by [@marcotuna](https://github.com/marcotuna).
-- create bind volume on host if not exists, by [@bradrydzewski](https://github.com/bradrydzewski). [#2725](https://github.com/drone/drone/issues/2725).
+- create bind volume on host if not exists, by [@bradrydzewski](https://github.com/bradrydzewski). [#2725](https://github.com/joseluisq/drone/issues/2725).
 - preserve whitespace in build logs, by [@geek1011](https://github.com/geek1011). [drone/drone-ui#294](https://github.com/drone/drone-ui/pull/294).
 - enable log file download on firefox, by [@bobmanary](https://github.com/bobmanary). [drone/drone-ui#303](https://github.com/drone/drone-ui/pull/303)
 
@@ -191,13 +191,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - disable github status for cron jobs
-- support for action in conditionals, by [@bradrydzewski](https://github.com/bradrydzewski). [#2685](https://github.com/drone/drone/issues/2685).
+- support for action in conditionals, by [@bradrydzewski](https://github.com/bradrydzewski). [#2685](https://github.com/joseluisq/drone/issues/2685).
 
 ### Fixed
 
 - improve cancel logic for dangling stages, by [@bradrydzewski](https://github.com/bradrydzewski).
-- improve error when kubernetes malforms the port configuration, by [@bradrydzewski](https://github.com/bradrydzewski). [#2742](https://github.com/drone/drone/issues/2742).
-- copy parameters from parent build when promoting, by [@bradrydzewski](https://github.com/bradrydzewski). [#2748](https://github.com/drone/drone/issues/2748).
+- improve error when kubernetes malforms the port configuration, by [@bradrydzewski](https://github.com/bradrydzewski). [#2742](https://github.com/joseluisq/drone/issues/2742).
+- copy parameters from parent build when promoting, by [@bradrydzewski](https://github.com/bradrydzewski). [#2748](https://github.com/joseluisq/drone/issues/2748).
 
 ## [1.2.2] - 2019-07-29
 ### Added
@@ -212,12 +212,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- error when manually creating an empty user, by [@bradrydzewski](https://github.com/bradrydzewski). [#2738](https://github.com/drone/drone/issues/2738).
+- error when manually creating an empty user, by [@bradrydzewski](https://github.com/bradrydzewski). [#2738](https://github.com/joseluisq/drone/issues/2738).
 
 ## [1.2.1] - 2019-06-11
 ### Added
 
-- support for legacy tokens to ease upgrade path, by [@bradrydzewski](https://github.com/bradrydzewski). [#2713](https://github.com/drone/drone/issues/2713).
+- support for legacy tokens to ease upgrade path, by [@bradrydzewski](https://github.com/bradrydzewski). [#2713](https://github.com/joseluisq/drone/issues/2713).
 - include repository name and id in batch update error message, by [@bradrydzewski](https://github.com/bradrydzewski).
 
 ### Fixed
@@ -229,28 +229,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.2.0] - 2019-05-30
 ### Added
 
-- endpoint to trigger new build for default branch, by [@bradrydzewski](https://github.com/bradrydzewski). [#2679](https://github.com/drone/drone/issues/2679).
-- endpoint to trigger new build for branch, by [@bradrydzewski](https://github.com/bradrydzewski). [#2679](https://github.com/drone/drone/issues/2679).
-- endpoint to trigger new build for branch and sha, by [@bradrydzewski](https://github.com/bradrydzewski). [#2679](https://github.com/drone/drone/issues/2679).
+- endpoint to trigger new build for default branch, by [@bradrydzewski](https://github.com/bradrydzewski). [#2679](https://github.com/joseluisq/drone/issues/2679).
+- endpoint to trigger new build for branch, by [@bradrydzewski](https://github.com/bradrydzewski). [#2679](https://github.com/joseluisq/drone/issues/2679).
+- endpoint to trigger new build for branch and sha, by [@bradrydzewski](https://github.com/bradrydzewski). [#2679](https://github.com/joseluisq/drone/issues/2679).
 - enable optional prometheus metrics guest access, by [@janberktold](https://github.com/janberktold)
-- fallback to database when logs not found in s3, by [@bradrydzewski](https://github.com/bradrydzewski). [#2689](https://github.com/drone/drone/issues/2689).
-- support for custom stage definitions and runners, by [@bradrydzewski](https://github.com/bradrydzewski). [#2680](https://github.com/drone/drone/issues/2680).
+- fallback to database when logs not found in s3, by [@bradrydzewski](https://github.com/bradrydzewski). [#2689](https://github.com/joseluisq/drone/issues/2689).
+- support for custom stage definitions and runners, by [@bradrydzewski](https://github.com/bradrydzewski). [#2680](https://github.com/joseluisq/drone/issues/2680).
 - update drone-yaml to version 1.1.0
 
 ### Fixed
 
 - retrieve latest build by branch, by [@tboerger](https://github.com/tboerger).
-- copy the fork value when restarting a build, by [@bradrydzewski](https://github.com/bradrydzewski). [#2708](https://github.com/drone/drone/issues/2708).
-- make healthz available without redirect, by [@bradrydzewski](https://github.com/bradrydzewski). [#2706](https://github.com/drone/drone/issues/2706).
+- copy the fork value when restarting a build, by [@bradrydzewski](https://github.com/bradrydzewski). [#2708](https://github.com/joseluisq/drone/issues/2708).
+- make healthz available without redirect, by [@bradrydzewski](https://github.com/bradrydzewski). [#2706](https://github.com/joseluisq/drone/issues/2706).
 
 ## [1.1.0] - 2019-04-23
 ### Added
 
-- specify a user for the pipeline step, by [@bradrydzewski](https://github.com/bradrydzewski). [#2651](https://github.com/drone/drone/issues/2651).
-- support for Gitea oauth2, by [@techknowlogick](https://github.com/techknowlogick). [#2622](https://github.com/drone/drone/pull/2622).
-- ping the docker daemon before starting the agent, by [@bradrydzewski](https://github.com/bradrydzewski). [#2495](https://github.com/drone/drone/issues/2495).
-- support for Cron job name in Yaml trigger block, by [@bradrydzewski](https://github.com/bradrydzewski). [#2628](https://github.com/drone/drone/issues/2628).
-- support for Cron job name in Yaml when block, by [@bradrydzewski](https://github.com/bradrydzewski). [#2628](https://github.com/drone/drone/issues/2628).
+- specify a user for the pipeline step, by [@bradrydzewski](https://github.com/bradrydzewski). [#2651](https://github.com/joseluisq/drone/issues/2651).
+- support for Gitea oauth2, by [@techknowlogick](https://github.com/techknowlogick). [#2622](https://github.com/joseluisq/drone/pull/2622).
+- ping the docker daemon before starting the agent, by [@bradrydzewski](https://github.com/bradrydzewski). [#2495](https://github.com/joseluisq/drone/issues/2495).
+- support for Cron job name in Yaml trigger block, by [@bradrydzewski](https://github.com/bradrydzewski). [#2628](https://github.com/joseluisq/drone/issues/2628).
+- support for Cron job name in Yaml when block, by [@bradrydzewski](https://github.com/bradrydzewski). [#2628](https://github.com/joseluisq/drone/issues/2628).
 - sqlite username column changed to case-insensitive, by [@bradrydzewski](https://github.com/bradrydzewski).
 - endpoint to purge repository from database, by [@bradrydzewski](https://github.com/bradrydzewski).
 - support for per-organization secrets, by [@bradrydzewski](https://github.com/bradrydzewski).
@@ -262,9 +262,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- fixed error in mysql table creation syntax, from [@xuyang2](https://github.com/xuyang2). [#2677](https://github.com/drone/drone/pull/2677).
-- fixed stuck builds when upstream dependency is skipped, from [@bradrydzewski](https://github.com/bradrydzewski). [#2634](https://github.com/drone/drone/issues/2634).
-- fixed issue running steps with dependencies on failure, from [@bradrydzewski](https://github.com/bradrydzewski). [#2667](https://github.com/drone/drone/issues/2667).
+- fixed error in mysql table creation syntax, from [@xuyang2](https://github.com/xuyang2). [#2677](https://github.com/joseluisq/drone/pull/2677).
+- fixed stuck builds when upstream dependency is skipped, from [@bradrydzewski](https://github.com/bradrydzewski). [#2634](https://github.com/joseluisq/drone/issues/2634).
+- fixed issue running steps with dependencies on failure, from [@bradrydzewski](https://github.com/bradrydzewski). [#2667](https://github.com/joseluisq/drone/issues/2667).
 
 ## [1.0.1] - 2019-04-10
 ### Added

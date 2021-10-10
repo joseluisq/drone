@@ -12,9 +12,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/handler/api/errors"
-	"github.com/drone/drone/handler/api/request"
+	"github.com/joseluisq/drone/core"
+	"github.com/joseluisq/drone/handler/api/errors"
+	"github.com/joseluisq/drone/handler/api/request"
 	"github.com/google/go-cmp/cmp"
 
 	"github.com/go-chi/chi"

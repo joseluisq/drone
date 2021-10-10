@@ -9,8 +9,8 @@ package registry
 import (
 	"context"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/plugin/registry/auths"
+	"github.com/joseluisq/drone/core"
+	"github.com/joseluisq/drone/plugin/registry/auths"
 
 	"github.com/sirupsen/logrus"
 )

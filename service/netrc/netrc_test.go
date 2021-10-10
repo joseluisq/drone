@@ -9,8 +9,8 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/mock"
+	"github.com/joseluisq/drone/core"
+	"github.com/joseluisq/drone/mock"
 	"github.com/drone/go-scm/scm"
 	"github.com/golang/mock/gomock"
 	"github.com/google/go-cmp/cmp"

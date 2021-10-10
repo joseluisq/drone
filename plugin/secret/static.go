@@ -18,7 +18,7 @@ import (
 	"context"
 	"strings"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 )
 
 // Static returns a new static Secret controller.

@@ -17,7 +17,7 @@ package stage
 import (
 	"database/sql"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 )
 
 type nullStep struct {

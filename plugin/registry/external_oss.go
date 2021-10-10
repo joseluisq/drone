@@ -16,7 +16,7 @@
 
 package registry
 
-import "github.com/drone/drone/core"
+import "github.com/joseluisq/drone/core"
 
 // External returns a no-op registry credential provider.
 func External(string, string, bool) core.RegistryService {

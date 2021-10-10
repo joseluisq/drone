@@ -15,7 +15,7 @@
 package starlark
 
 import (
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 
 	"go.starlark.net/starlark"
 	"go.starlark.net/starlarkstruct"

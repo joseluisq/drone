@@ -19,7 +19,7 @@ package metric
 import (
 	"net/http"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 )
 
 // Server is a no-op http Metrics server.

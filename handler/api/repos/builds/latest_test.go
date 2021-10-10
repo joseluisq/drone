@@ -10,8 +10,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/drone/drone/mock"
-	"github.com/drone/drone/handler/api/errors"
+	"github.com/joseluisq/drone/mock"
+	"github.com/joseluisq/drone/handler/api/errors"
 
 	"github.com/go-chi/chi"
 	"github.com/golang/mock/gomock"

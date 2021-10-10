@@ -13,7 +13,7 @@ import (
 	"net/url"
 
 	"github.com/Azure/azure-storage-blob-go/azblob"
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 )
 
 // NewAzureBlobEnv returns a new Azure blob log store.

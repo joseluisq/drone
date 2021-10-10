@@ -19,7 +19,7 @@ package rpc2
 import (
 	"net/http"
 
-	"github.com/drone/drone/operator/manager"
+	"github.com/joseluisq/drone/operator/manager"
 )
 
 // Server wraps the chi Router in a custom type for wire

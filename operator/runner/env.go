@@ -19,7 +19,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 )
 
 func systemEnviron(system *core.System) map[string]string {

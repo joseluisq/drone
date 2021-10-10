@@ -9,9 +9,9 @@ package builds
 import (
 	"net/http"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/handler/api/render"
-	"github.com/drone/drone/logger"
+	"github.com/joseluisq/drone/core"
+	"github.com/joseluisq/drone/handler/api/render"
+	"github.com/joseluisq/drone/logger"
 )
 
 // HandleIncomplete returns an http.HandlerFunc that writes a

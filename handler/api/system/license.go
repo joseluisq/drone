@@ -9,8 +9,8 @@ package system
 import (
 	"net/http"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/handler/api/render"
+	"github.com/joseluisq/drone/core"
+	"github.com/joseluisq/drone/handler/api/render"
 )
 
 // HandleLicense returns an http.HandlerFunc that writes

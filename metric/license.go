@@ -6,7 +6,7 @@
 
 package metric
 
-import "github.com/drone/drone/core"
+import "github.com/joseluisq/drone/core"
 
 // License registers the license metrics.
 func License(license core.LicenseService) {

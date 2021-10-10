@@ -20,7 +20,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 	"github.com/sirupsen/logrus"
 	"go.starlark.net/starlark"
 )

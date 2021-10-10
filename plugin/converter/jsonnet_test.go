@@ -9,7 +9,7 @@ package converter
 import (
 	"testing"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 )
 
 const jsonnetFile = `{"foo": "bar"}`

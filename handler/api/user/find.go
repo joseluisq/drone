@@ -17,8 +17,8 @@ package user
 import (
 	"net/http"
 
-	"github.com/drone/drone/handler/api/render"
-	"github.com/drone/drone/handler/api/request"
+	"github.com/joseluisq/drone/handler/api/render"
+	"github.com/joseluisq/drone/handler/api/request"
 )
 
 // HandleFind returns an http.HandlerFunc that writes json-encoded

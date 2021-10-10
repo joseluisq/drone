@@ -8,4 +8,13 @@
 release/
 scripts/*.go
 docker/**/data
+*bin*
+*debug*
+vendor
+*.tmp
+*.txt
+*.log
+*.bin
+*.sum
+.vscode
 TODO*

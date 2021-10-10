@@ -1,5 +1,7 @@
 Drone is a Continuous Delivery system built on container technology. Drone uses a simple YAML configuration file, a superset of docker-compose, to define and execute Pipelines inside Docker containers. 
 
+> **DISCLAIMER:** This is a personal-usage fork of the "legacy" v1.x. This fork is intended to maintain not more than my own needed changes. However, if your want to support Drone or provide feedback, please do it on [the original repository](https://github.com/drone/drone).
+
 <br/>
 
 <img src="https://github.com/drone/brand/blob/master/screenshots/screenshot_build_success.png" style="max-width:100px;" />
@@ -46,7 +48,7 @@ Documentation and Other Links:
 * Usage Documentation [docs.drone.io/getting-started](http://docs.drone.io/getting-started/)
 * Plugin Index [plugins.drone.io](http://plugins.drone.io/)
 * Getting Help [discourse.drone.io](https://discourse.drone.io)
-* Build the Enterprise Edition [BUILDING](https://github.com/drone/drone/blob/master/BUILDING)
-* Build the Community Edition [BUILDING_OSS](https://github.com/drone/drone/blob/master/BUILDING_OSS)
+* Build the Enterprise Edition [BUILDING](https://github.com/joseluisq/drone/blob/master/BUILDING)
+* Build the Community Edition [BUILDING_OSS](https://github.com/joseluisq/drone/blob/master/BUILDING_OSS)
 
-_Please note the official Docker images run the Drone Enterprise distribution. If you would like to run the Community Edition you can build from source by following the instructions in [BUILDING_OSS](https://github.com/drone/drone/blob/master/BUILDING_OSS)._
+_Please note the official Docker images run the Drone Enterprise distribution. If you would like to run the Community Edition you can build from source by following the instructions in [BUILDING_OSS](https://github.com/joseluisq/drone/blob/master/BUILDING_OSS)._

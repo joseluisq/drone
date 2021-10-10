@@ -7,14 +7,14 @@ package syncer
 import (
 	"testing"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 	"github.com/google/go-cmp/cmp"
 )
 
 // import (
 // 	"testing"
 
-// 	"github.com/drone/drone/core"
+// 	"github.com/joseluisq/drone/core"
 // 	"github.com/drone/go-scm/scm"
 
 // 	"github.com/google/go-cmp/cmp"

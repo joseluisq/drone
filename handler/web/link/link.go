@@ -17,7 +17,7 @@ package link
 import (
 	"net/http"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 	"github.com/drone/go-scm/scm"
 
 	"github.com/go-chi/chi"

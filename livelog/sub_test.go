@@ -9,7 +9,7 @@ package livelog
 import (
 	"testing"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 )
 
 func TestSubscription_publish(t *testing.T) {

@@ -15,16 +15,16 @@
 package main
 
 import (
-	spec "github.com/drone/drone/cmd/drone-server/config"
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/plugin/admission"
-	"github.com/drone/drone/plugin/config"
-	"github.com/drone/drone/plugin/converter"
-	"github.com/drone/drone/plugin/converter/starlark"
-	"github.com/drone/drone/plugin/registry"
-	"github.com/drone/drone/plugin/secret"
-	"github.com/drone/drone/plugin/validator"
-	"github.com/drone/drone/plugin/webhook"
+	spec "github.com/joseluisq/drone/cmd/drone-server/config"
+	"github.com/joseluisq/drone/core"
+	"github.com/joseluisq/drone/plugin/admission"
+	"github.com/joseluisq/drone/plugin/config"
+	"github.com/joseluisq/drone/plugin/converter"
+	"github.com/joseluisq/drone/plugin/converter/starlark"
+	"github.com/joseluisq/drone/plugin/registry"
+	"github.com/joseluisq/drone/plugin/secret"
+	"github.com/joseluisq/drone/plugin/validator"
+	"github.com/joseluisq/drone/plugin/webhook"
 	"github.com/drone/go-scm/scm"
 
 	"github.com/google/wire"

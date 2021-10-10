@@ -18,7 +18,7 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 
 	"github.com/sirupsen/logrus"
 )

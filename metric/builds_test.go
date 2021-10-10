@@ -9,8 +9,8 @@ package metric
 import (
 	"testing"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/mock"
+	"github.com/joseluisq/drone/core"
+	"github.com/joseluisq/drone/mock"
 
 	"github.com/golang/mock/gomock"
 	"github.com/prometheus/client_golang/prometheus"

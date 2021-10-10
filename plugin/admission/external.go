@@ -12,7 +12,7 @@ import (
 
 	"github.com/drone/drone-go/drone"
 	"github.com/drone/drone-go/plugin/admission"
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 )
 
 // External returns a new external Admission controller.

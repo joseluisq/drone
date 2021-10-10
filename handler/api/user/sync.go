@@ -18,10 +18,10 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/handler/api/render"
-	"github.com/drone/drone/handler/api/request"
-	"github.com/drone/drone/logger"
+	"github.com/joseluisq/drone/core"
+	"github.com/joseluisq/drone/handler/api/render"
+	"github.com/joseluisq/drone/handler/api/request"
+	"github.com/joseluisq/drone/logger"
 )
 
 // HandleSync returns an http.HandlerFunc synchronizes and then

@@ -14,7 +14,7 @@
 
 package canceler
 
-import "github.com/drone/drone/core"
+import "github.com/joseluisq/drone/core"
 
 func match(build *core.Build, with *core.Repository) bool {
 	// filter out existing builds for others

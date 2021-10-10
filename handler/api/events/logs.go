@@ -22,8 +22,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/handler/api/render"
+	"github.com/joseluisq/drone/core"
+	"github.com/joseluisq/drone/handler/api/render"
 
 	"github.com/go-chi/chi"
 )

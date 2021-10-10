@@ -18,7 +18,7 @@ import (
 	"context"
 	"strings"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 )
 
 // Combine combines the secret services, allowing the system

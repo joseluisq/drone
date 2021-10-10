@@ -24,8 +24,8 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/logger"
+	"github.com/joseluisq/drone/core"
+	"github.com/joseluisq/drone/logger"
 	"github.com/drone/go-scm/scm"
 )
 

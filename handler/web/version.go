@@ -17,7 +17,7 @@ package web
 import (
 	"net/http"
 
-	"github.com/drone/drone/version"
+	"github.com/joseluisq/drone/version"
 )
 
 // HandleVersion creates an http.HandlerFunc that returns the

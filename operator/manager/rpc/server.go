@@ -14,8 +14,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/drone/drone/operator/manager"
-	"github.com/drone/drone/store/shared/db"
+	"github.com/joseluisq/drone/operator/manager"
+	"github.com/joseluisq/drone/store/shared/db"
 )
 
 // default http request timeout

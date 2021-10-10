@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 	"github.com/h2non/gock"
 )
 

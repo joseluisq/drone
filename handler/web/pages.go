@@ -22,8 +22,8 @@ import (
 	"time"
 
 	"github.com/drone/drone-ui/dist"
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/handler/web/landingpage"
+	"github.com/joseluisq/drone/core"
+	"github.com/joseluisq/drone/handler/web/landingpage"
 )
 
 func HandleIndex(host string, session core.Session, license core.LicenseService) http.HandlerFunc {

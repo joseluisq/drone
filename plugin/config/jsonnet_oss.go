@@ -16,7 +16,7 @@
 
 package config
 
-import "github.com/drone/drone/core"
+import "github.com/joseluisq/drone/core"
 
 // Jsonnet returns a no-op configuration service.
 func Jsonnet(service core.FileService, enabled bool) core.ConfigService {

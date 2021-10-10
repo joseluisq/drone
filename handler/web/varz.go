@@ -18,7 +18,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 	"github.com/drone/go-scm/scm"
 )
 

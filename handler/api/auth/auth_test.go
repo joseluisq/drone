@@ -11,9 +11,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/handler/api/request"
-	"github.com/drone/drone/mock"
+	"github.com/joseluisq/drone/core"
+	"github.com/joseluisq/drone/handler/api/request"
+	"github.com/joseluisq/drone/mock"
 	"github.com/sirupsen/logrus"
 
 	"github.com/golang/mock/gomock"

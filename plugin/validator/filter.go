@@ -18,7 +18,7 @@ import (
 	"context"
 	"path/filepath"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 )
 
 // Filter returns a validation service that skips

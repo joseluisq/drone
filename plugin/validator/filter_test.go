@@ -17,7 +17,7 @@ package validator
 import (
 	"testing"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 )
 
 func TestFilter_None(t *testing.T) {

@@ -16,7 +16,7 @@
 
 package admission
 
-import "github.com/drone/drone/core"
+import "github.com/joseluisq/drone/core"
 
 // External is a no-op admission controller
 func External(string, string, bool) core.AdmissionService {

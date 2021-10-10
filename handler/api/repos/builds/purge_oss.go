@@ -19,7 +19,7 @@ package builds
 import (
 	"net/http"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 )
 
 // HandlePurge returns a non-op http.HandlerFunc.

@@ -9,7 +9,7 @@ package admission
 import (
 	"testing"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 	"github.com/golang/mock/gomock"
 )
 

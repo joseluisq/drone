@@ -9,7 +9,7 @@ package converter
 import (
 	"context"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 )
 
 // Legacy returns a conversion service that converts a

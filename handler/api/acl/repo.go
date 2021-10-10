@@ -18,11 +18,11 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/handler/api/errors"
-	"github.com/drone/drone/handler/api/render"
-	"github.com/drone/drone/handler/api/request"
-	"github.com/drone/drone/logger"
+	"github.com/joseluisq/drone/core"
+	"github.com/joseluisq/drone/handler/api/errors"
+	"github.com/joseluisq/drone/handler/api/render"
+	"github.com/joseluisq/drone/handler/api/request"
+	"github.com/joseluisq/drone/logger"
 
 	"github.com/go-chi/chi"
 	"github.com/sirupsen/logrus"

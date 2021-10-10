@@ -17,10 +17,10 @@ package acl
 import (
 	"net/http"
 
-	"github.com/drone/drone/handler/api/errors"
-	"github.com/drone/drone/handler/api/render"
-	"github.com/drone/drone/handler/api/request"
-	"github.com/drone/drone/logger"
+	"github.com/joseluisq/drone/handler/api/errors"
+	"github.com/joseluisq/drone/handler/api/render"
+	"github.com/joseluisq/drone/handler/api/request"
+	"github.com/joseluisq/drone/logger"
 )
 
 // AuthorizeUser returns an http.Handler middleware that authorizes only

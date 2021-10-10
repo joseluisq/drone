@@ -20,7 +20,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 
 	lru "github.com/hashicorp/golang-lru"
 )

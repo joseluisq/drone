@@ -18,7 +18,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 	"github.com/drone/go-scm/scm"
 	"github.com/drone/go-scm/scm/driver/github"
 )

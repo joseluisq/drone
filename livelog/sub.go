@@ -17,7 +17,7 @@ package livelog
 import (
 	"sync"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 )
 
 type subscriber struct {

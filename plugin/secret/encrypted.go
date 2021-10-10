@@ -22,8 +22,8 @@ import (
 	"errors"
 
 	"github.com/drone/drone-yaml/yaml"
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/logger"
+	"github.com/joseluisq/drone/core"
+	"github.com/joseluisq/drone/logger"
 )
 
 // Encrypted returns a new encrypted Secret controller.

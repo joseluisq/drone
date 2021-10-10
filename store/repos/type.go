@@ -18,7 +18,7 @@ import (
 	"database/sql"
 	"encoding/json"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 
 	"github.com/jmoiron/sqlx/types"
 )

@@ -16,7 +16,7 @@
 
 package cache
 
-import "github.com/drone/drone/core"
+import "github.com/joseluisq/drone/core"
 
 // Contents returns the default FileService with no caching
 // enabled.

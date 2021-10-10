@@ -14,7 +14,7 @@
 
 package logs
 
-import "github.com/drone/drone/store/shared/db"
+import "github.com/joseluisq/drone/store/shared/db"
 
 // helper function scans the sql.Row and copies the column
 // values to the destination object.

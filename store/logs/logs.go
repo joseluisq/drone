@@ -20,8 +20,8 @@ import (
 	"io"
 	"io/ioutil"
 
-	"github.com/drone/drone/core"
-	"github.com/drone/drone/store/shared/db"
+	"github.com/joseluisq/drone/core"
+	"github.com/joseluisq/drone/store/shared/db"
 )
 
 // New returns a new LogStore.

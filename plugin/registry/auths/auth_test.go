@@ -10,7 +10,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 	"github.com/google/go-cmp/cmp"
 )
 

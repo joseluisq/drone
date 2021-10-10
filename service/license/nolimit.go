@@ -18,7 +18,7 @@
 package license
 
 import (
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 )
 
 // DefaultLicense is an empty license with no restrictions.

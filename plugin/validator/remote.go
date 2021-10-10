@@ -12,7 +12,7 @@ import (
 
 	"github.com/drone/drone-go/drone"
 	"github.com/drone/drone-go/plugin/validator"
-	"github.com/drone/drone/core"
+	"github.com/joseluisq/drone/core"
 )
 
 // Remote returns a conversion service that converts the

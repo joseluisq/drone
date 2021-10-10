@@ -16,7 +16,7 @@
 
 package syncer
 
-import "github.com/drone/drone/core"
+import "github.com/joseluisq/drone/core"
 
 // FilterFunc can be used to filter which repositories are
 // synchronized with the local datastore.
