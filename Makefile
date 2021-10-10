@@ -1,5 +1,6 @@
 BUILD_TIME ?= $(shell date -u '+%Y-%m-%dT%H:%m:%S')
 BUILD_VCS_REF ?= $(shell git rev-parse --short HEAD)
+REPO="github.com/joseluisq/drone"
 
 install:
 	@go version
@@ -21,8 +22,6 @@ build:
 			-X 'main.version=0.0.0' \
 			-X 'main.buildTime=$(BUILD_TIME)' \
 			-X 'main.buildCommit=$(BUILD_VCS_REF)'" \
-		-a -o bin/cline ./examples
-	@ls -ogh bin/drone
+		-a -o release/linux/${GOARCH}/drone-server ${REPO}/cmd/drone-server
+	@ls -ogh release/linux/${GOARCH}/drone-server
 .PHONY: build
-
-
